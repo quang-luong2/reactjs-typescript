@@ -1,16 +1,13 @@
-import React from 'react';
-import '../App.css';
+import React from 'react'
 
-interface Prop {
-    data: string;
-}
-
-const Message: React.FC<Prop> = ({data})  => {
+const Message: React.FC<{ data: string }> = ({ data }) => {
   return (
-    <div className="message">
-        <p>Chào mừng <span>{data}</span> đã gia nhập công ty Executionlab !</p>
+    <div className='message'>
+      <p>
+        Chào mừng <span>{data}</span> đã gia nhập công ty Executionlab !
+      </p>
     </div>
-  );
+  )
 }
 
-export default Message;
+export default Message
